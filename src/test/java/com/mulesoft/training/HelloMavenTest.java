@@ -7,10 +7,10 @@ import org.mule.api.MuleEvent;
 
 public class HelloMavenTest extends FunctionalTestCase {
 
-//    @Test
-//    public void mavenFlowReturnsHelloMaven() throws Exception {
-//        runFlowAndExpect("mavenFlow", "Hello");
-//    }
+    @Test
+    public void mavenFlowReturnsHelloMaven() throws Exception {
+        runFlowAndExpect("mavenFlow", "Hello");
+    }
 	
 	@Test
 	public void retrieveFlightsAddsAppropriateHeader() throws Exception {
@@ -21,7 +21,7 @@ public class HelloMavenTest extends FunctionalTestCase {
     
     @Override
     protected String getConfigFile() {
-        return "maven-project.xml";
+        return "maven_project.xml";
     }
 
 }
